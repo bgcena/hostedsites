@@ -10,9 +10,12 @@
 
 <h3>Request details -Chinmay</h3>
 </hr>
+<div class="bs-example">
 <p class="navbar-text" >Request URL is: </p>
 <?php echo $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";  ?>
+</div>
 </hr>
+<div class="bs-example">
 <p class="navbar-text" >These are request headers</p>
 <?php
 foreach ($_SERVER as $key => $value) {
@@ -26,7 +29,7 @@ foreach ($_SERVER as $key => $value) {
         echo $header.'<br>';
     }
 }
-
+</div>
 ?>
 
 <!-- JavaScript Bundle with Popper -->
