@@ -30,7 +30,7 @@
     <table class="table">
         <tbody>
             <tr>
-                <th scope="row">Request details</th>
+                <th scope="row">Request URL</th>
                 <td class=""> <?php echo $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";  ?> </td>
             </tr>
             <tr>

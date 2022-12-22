@@ -1,4 +1,12 @@
-<p>Designed and maintained by Chinmay.  Contributed by Swamy</p>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  Designed and maintained by Chinmay <p>Contributed by Swamy</p>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
