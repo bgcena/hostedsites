@@ -1,6 +1,6 @@
 <?php include "../top.php" ?>
 <div class="container">
-    <h3>Request details -Chinmay</h3>
+    
     <table class="table">
         <tbody>
             <tr>
