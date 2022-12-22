@@ -1,54 +1,58 @@
-<?php include "../top.php"?>
+<?php include "../top.php" ?>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+    <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/index.php">Team PST</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.php">Team PST</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" action="/login.php">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
- <div class="container">
-<h3>Request details -Chinmay</h3>
-</hr>
-<div class="bs-example">
-<p class="navbar-text" >Request URL is: </p>
-<?php echo $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";  ?>
-</div>
-</hr>
-<div class="bs-example">
-<p class="navbar-text" >These are request headers</p>
-<?php
-foreach ($_SERVER as $key => $value) {
-    if (strpos($key, 'HTTP_') === 0) {
-        $chunks = explode('_', $key);
-        $header = '';
-        for ($i = 1; $y = sizeof($chunks) - 1, $i < $y; $i++) {
-            $header .= ucfirst(strtolower($chunks[$i])).'-';
-        }
-        $header .= ucfirst(strtolower($chunks[$i])).': '.$value;
-        echo $header.'<br>';
-    }
-}
+            <form class="navbar-form navbar-right" action="/login.php">
+                <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+        </div>
+        <!--/.navbar-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <h3>Request details -Chinmay</h3>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th scope="row">Request details</th>
+                <td class=""> <?php echo $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";  ?> </td>
+            </tr>
+            <tr>
+                <th scope="row">Request Headers</th>
+                <td class=""><?php
+                                foreach ($_SERVER as $key => $value) {
+                                    if (strpos($key, 'HTTP_') === 0) {
+                                        $chunks = explode('_', $key);
+                                        $header = '';
+                                        for ($i = 1; $y = sizeof($chunks) - 1, $i < $y; $i++) {
+                                            $header .= ucfirst(strtolower($chunks[$i])) . '-';
+                                        }
+                                        $header .= ucfirst(strtolower($chunks[$i])) . ': ' . $value;
+                                        echo $header . '<br>';
+                                    }
+                                }
 
-?>
-</div>
-</div>   
+                                ?></td>
 
-<?php include "../bottom.php"?>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<?php include "../bottom.php" ?>
