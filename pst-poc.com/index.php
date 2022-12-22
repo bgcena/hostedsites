@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Team PST</a>
+          <a class="navbar-brand" href="/index.php">Team PST</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" action="/login.php">
@@ -46,7 +46,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Welcome to PST Tools</h1>
-        <p>This site is created by PST team Sa's for usful tools and informations</p>
+        <p>This site is created by PST team SA's for usful tools and informations</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
       </div>
     </div>
