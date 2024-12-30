@@ -1,4 +1,4 @@
-<?php include "../top.php" ?>
+
 <div class="container">
     
     <table class="table">
@@ -33,4 +33,4 @@
     </table>
 </div>
 
-<?php include "../bottom.php" ?>
+
